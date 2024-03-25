@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Clong Master</title>
+    <title>Clongmaster</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico?" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="main">
-      <h1>Conlang name</h1>
-      <h2>Conlang name in English</h2>
-      <p>Description</p>
+      <h1 id="name">Conlang name</h1>
+      <h2 id="engName">Conlang name in English</h2>
+      <p id="desc">Description / Lore</p>
     </div>
     <div id="sidebar">
       <p onclick="openModal('editGenInfo')">Edit general info</p>
@@ -34,11 +34,12 @@
           <h2>General info</h2>
         </div>
         <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
+          <input type="text" name="name" id="nameInput" placeholder="Enter the name of your conlang...">
+          <input type="text" name="engName" id="engNameInput" placeholder="Enter the English name of your conlang...">
+          <textarea name="desc" id="descInput" placeholder="Enter the description and/or lore of your language..."></textarea>
         </div>
         <div class="modal-footer">
-          <h3>Modal Footer</h3>
+          <p onclick="saveGenInfo()">Save this info</p>
         </div>
       </div>
     </div>
