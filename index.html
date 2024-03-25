@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Clong Master</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,13 +16,99 @@
       <p>Description</p>
     </div>
     <div id="sidebar">
-      <p>Edit general info</p>
-      <p>Edit phonology</p>
-      <p>Edit orthography</p>
-      <p>Edit morphology</p>
-      <p>Edit syntax</p>
-      <p style="margin-top: auto;">Export</p>
+      <p onclick="openModal('editGenInfo')">Edit general info</p>
+      <p onclick="openModal('editPhonology')">Edit phonology</p>
+      <p onclick="openModal('editOrthography')">Edit orthography</p>
+      <p onclick="openModal('editMorphology')">Edit morphology</p>
+      <p onclick="openModal('editSyntax')">Edit syntax</p>
+      <p style="margin-top: auto">Export</p>
       <p>Import</p>
+    </div>
+
+    <!-- The Modal -->
+    <div id="editGenInfo" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <h2>General info</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="editPhonology" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <h2>Phonology</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="editOrthography" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <h2>Orthography</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="editMorphology" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <h2>Morphology</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="editSyntax" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <h2>Syntax</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
