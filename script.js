@@ -47,6 +47,10 @@ function loadData() {
   document.getElementById("name").innerHTML = genInfo.name;
   document.getElementById("engName").innerHTML = genInfo.eng;
   document.getElementById("desc").innerHTML = genInfo.desc;
+
+  document.getElementById("nameInput").value = genInfo.name;
+  document.getElementById("engNameInput").value = genInfo.eng;
+  document.getElementById("descInput").value = genInfo.desc;
 }
 
 window.onload = function() {
