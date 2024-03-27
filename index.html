@@ -14,6 +14,141 @@
       <h1 id="name">Conlang name</h1>
       <h2 id="engName" style="font-style: italic;">Conlang name in English</h2>
       <p id="desc">Description / Lore</p>
+      <hr>
+      <h3>Phonology</h3>
+      <br>
+      <table class="main-phon">
+        <tr class="header">
+          <td style="border-top-left-radius: 7px;"></td>
+          <th colspan="2">Front</th>
+          <th colspan="2">Central</th>
+          <th colspan="2" style="border-top-right-radius: 7px;">Back</th>
+        </tr>
+        <tr style="display: none;" id="vowelRow1">
+          <th class="side-ipa">Close</th>
+          <td onclick="select(this)" id="vowel00u">i
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_front_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel00r">y
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_front_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel01u">ɨ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_central_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel01r">ʉ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_central_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel02u">ɯ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_back_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel02r">u
+            <img src="images/speaker.png" onclick="playAudio(event, 'close_back_rounded_vowel')">
+          </td>
+        </tr>
+        <tr style="display: none;" id="vowelRow2">
+          <th class="side-ipa">Near-close</th>
+          <td onclick="select(this)" id="vowel10u">ɪ
+            <img src="images/speaker.png" onclick="playAudio(event, 'near-close_front_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel10r">ʏ
+            <img src="images/speaker.png" onclick="playAudio(event, 'near-close_front_rounded_vowel')">
+          </td>
+          <td colspan="3"></td>
+          <td onclick="select(this)" id="vowel12r">ʊ
+            <img src="images/speaker.png" onclick="playAudio(event, 'near-close_back_rounded_vowel')">
+          </td>
+        </tr>
+        <tr style="display: none;" id="vowelRow3">
+        <th class="side-ipa">Close-mid</th>
+          <td onclick="select(this)" id="vowel20u">e
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_front_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel20r">ø
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_front_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel21u">ɘ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_central_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel21r">ɵ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_central_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel22u">ɤ
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_back_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel22r">o
+            <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_back_rounded_vowel')">
+          </td>
+        </tr>
+        <tr style="display: none;" id="vowelRow4">
+        <th class="side-ipa">Mid</th>
+          <td onclick="select(this)" id="vowel30u">e̞
+            <img src="images/speaker.png" onclick="playAudio(event, 'mid_front_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel30r">ø̞
+            <img src="images/speaker.png" onclick="playAudio(event, 'mid_front_rounded_vowel')">
+          </td>
+          <td colspan="2" onclick="select(this)" id="vowel31u">ə
+            <img src="images/speaker.png" onclick="playAudio(event, 'mid_central_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel32u">ɤ̞
+            <img src="images/speaker.png" onclick="playAudio(event, 'mid_back_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel32r">o̞
+            <img src="images/speaker.png" onclick="playAudio(event, 'mid_back_rounded_vowel')">
+          </td>
+        </tr>
+        <tr style="display: none;" id="vowelRow5">
+        <th class="side-ipa">Open-mid</th>
+          <td onclick="select(this)" id="vowel40u">ɛ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_front_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel40r">œ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_front_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel41u">ɜ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_central_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel41r">ɞ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_central_rounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel42u">ʌ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_back_unrounded_vowel')">
+          </td>
+          <td onclick="select(this)" id="vowel42r">ɔ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_back_rounded_vowel')">
+          </td>
+        </tr>
+        <tr style="display: none;" id="vowelRow6">
+        <th class="side-ipa">Near-open</th>
+          <td onclick="select(this)" id="vowel50u">æ
+            <img src="images/speaker.png" onclick="playAudio(event, 'near-open_front_unrounded_vowel')">
+          </td>
+          <td></td>
+          <td colspan="2" onclick="select(this)" id="vowel51u">ɐ
+            <img src="images/speaker.png" onclick="playAudio(event, 'near-open_central_unrounded_vowel')">
+          </td>
+          <td colspan="2"></td>
+        </tr>
+        <tr style="display: none;" id="vowelRow7">
+        <th class="side-ipa bottom-row" style="border-bottom-left-radius: 7px;">Open</th>
+          <td class="bottom-row" onclick="select(this)" id="vowel60u">a
+            <img src="images/speaker.png" onclick="playAudio(event, 'open_front_unrounded_vowel')">
+          </td>
+          <td class="bottom-row" onclick="select(this)" id="vowel60r">ɶ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open_front_rounded_vowel')">
+          </td>
+          <td class="bottom-row" onclick="select(this)" id="vowel61u">ä
+            <img src="images/speaker.png" onclick="playAudio(event, 'open_central_unrounded_vowel')">
+          </td>
+          <td></td>
+          <td class="bottom-row" onclick="select(this)" id="vowel62u">ɑ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open_back_unrounded_vowel')">
+          </td>
+          <td class="bottom-row" onclick="select(this)" id="vowel62r">ɒ
+            <img src="images/speaker.png" onclick="playAudio(event, 'open_back_rounded_vowel')">
+          </td>
+        </tr>
+      </table>
     </div>
     <div id="sidebar">
       <p onclick="openModal('editGenInfo')">Edit general info</p>
@@ -56,10 +191,10 @@
           <h1>Vowels</h1>
           <table>
             <tr class="top-ipa">
-              <td style="padding: 12px 0 0 0; text-align: right; font-size: 12px;">Backness →</td>
+              <td style="padding: 12px 0 0 0; text-align: right; font-size: 12px; border-top-left-radius: 7px;">Backness →</td>
               <th colspan="2">Front</th>
               <th colspan="2">Central</th>
-              <th colspan="2">Back</th>
+              <th colspan="2" style="border-top-right-radius: 7px;">Back</th>
             </tr>
             <tr class="top-ipa">
               <td style="padding: 10px 16px; text-align: left; font-size: 12px;">Height ↓</td>
@@ -72,163 +207,168 @@
             </tr>
             <tr>
               <th class="side-ipa">Close</th>
-              <td>i
+              <td onclick="select(this)" id="v00u">i
                 <audio src="audio/Close_front_unrounded_vowel.ogg" id="close_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_front_unrounded_vowel')">
               </td>
-              <td>y
+              <td onclick="select(this)" id="v00r">y
                 <audio src="audio/Close_front_rounded_vowel.ogg" id="close_front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_front_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_front_rounded_vowel')">
               </td>
-              <td>ɨ
+              <td onclick="select(this)" id="v01u">ɨ
                 <audio src="audio/Close_central_unrounded_vowel.ogg" id="close_central_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_central_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_central_unrounded_vowel')">
               </td>
-              <td>ʉ
+              <td onclick="select(this)" id="v01r">ʉ
                 <audio src="audio/Close_central_rounded_vowel.ogg" id="close_central_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_central_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_central_rounded_vowel')">
               </td>
-              <td>ɯ
+              <td onclick="select(this)" id="v02u">ɯ
                 <audio src="audio/Close_back_unrounded_vowel.ogg" id="close_back_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_back_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_back_unrounded_vowel')">
               </td>
-              <td>u
+              <td onclick="select(this)" id="v02r">u
                 <audio src="audio/Close_back_rounded_vowel.ogg" id="close_back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close_back_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close_back_rounded_vowel')">
               </td>
             </tr>
             <tr>
               <th class="side-ipa">Near-close</th>
-              <td>ɪ
-                <audio src="audio/Near-close_near-front_unrounded_vowel.ogg" id="near-close_near-front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('near-close_near-front_unrounded_vowel')">
+              <td onclick="select(this)" id="v10u">ɪ
+                <audio src="audio/Near-close_front_unrounded_vowel.ogg" id="near-close_front_unrounded_vowel"></audio>
+                <img src="images/speaker.png" onclick="playAudio(event, 'near-close_front_unrounded_vowel')">
               </td>
-              <td>ʏ
-                <audio src="audio/Near-close_near-front_rounded_vowel.ogg" id="near-close_near-front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('near-close_near-front_rounded_vowel')">
+              <td onclick="select(this)" id="v10r">ʏ
+                <audio src="audio/Near-close_front_rounded_vowel.ogg" id="near-close_front_rounded_vowel"></audio>
+                <img src="images/speaker.png" onclick="playAudio(event, 'near-close_front_rounded_vowel')">
               </td>
               <td colspan="3"></td>
-              <td>ʊ
-                <audio src="audio/Near-close_near-back_rounded_vowel.ogg" id="near-close_near-back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('near-close_near-back_rounded_vowel')">
+              <td onclick="select(this)" id="v12r">ʊ
+                <audio src="audio/Near-close_back_rounded_vowel.ogg" id="near-close_back_rounded_vowel"></audio>
+                <img src="images/speaker.png" onclick="playAudio(event, 'near-close_back_rounded_vowel')">
               </td>
             </tr>
+            <tr>
             <th class="side-ipa">Close-mid</th>
-              <td>e
+              <td onclick="select(this)" id="v20u">e
                 <audio src="audio/Close-mid_front_unrounded_vowel.ogg" id="close-mid_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_front_unrounded_vowel')">
               </td>
-              <td>ø
+              <td onclick="select(this)" id="v20r">ø
                 <audio src="audio/Close-mid_front_rounded_vowel.ogg" id="close-mid_front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_front_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_front_rounded_vowel')">
               </td>
-              <td>ɘ
+              <td onclick="select(this)" id="v21u">ɘ
                 <audio src="audio/Close-mid_central_unrounded_vowel.ogg" id="close-mid_central_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_central_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_central_unrounded_vowel')">
               </td>
-              <td>ɵ
+              <td onclick="select(this)" id="v21r">ɵ
                 <audio src="audio/Close-mid_central_rounded_vowel.ogg" id="close-mid_central_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_central_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_central_rounded_vowel')">
               </td>
-              <td>ɤ
+              <td onclick="select(this)" id="v22u">ɤ
                 <audio src="audio/Close-mid_back_unrounded_vowel.ogg" id="close-mid_back_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_back_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_back_unrounded_vowel')">
               </td>
-              <td>o
+              <td onclick="select(this)" id="v22r">o
                 <audio src="audio/Close-mid_back_rounded_vowel.ogg" id="close-mid_back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('close-mid_back_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'close-mid_back_rounded_vowel')">
               </td>
             </tr>
+            <tr>
             <th class="side-ipa">Mid</th>
-              <td>e̞
+              <td onclick="select(this)" id="v30u">e̞
                 <audio src="audio/Mid_front_unrounded_vowel.ogg" id="mid_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('mid_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'mid_front_unrounded_vowel')">
               </td>
-              <td>ø̞
+              <td onclick="select(this)" id="v30r">ø̞
                 <audio src="audio/Mid_front_rounded_vowel.ogg" id="mid_front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('mid_front_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'mid_front_rounded_vowel')">
               </td>
-              <td colspan="2">ə
-                <audio src="audio/Mid_central_vowel.ogg" id="mid_central_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('mid_central_vowel')">
+              <td colspan="2" onclick="select(this)" id="v31u">ə
+                <audio src="audio/Mid_central_unrounded_vowel.ogg" id="mid_central_unrounded_vowel"></audio>
+                <img src="images/speaker.png" onclick="playAudio(event, 'mid_central_unrounded_vowel')">
               </td>
-              <td>ɤ̞
+              <td onclick="select(this)" id="v32u">ɤ̞
                 <audio src="audio/Mid_back_unrounded_vowel.ogg" id="mid_back_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('mid_back_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'mid_back_unrounded_vowel')">
               </td>
-              <td>o̞
+              <td onclick="select(this)" id="v32r">o̞
                 <audio src="audio/Mid_back_rounded_vowel.ogg" id="mid_back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('mid_back_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'mid_back_rounded_vowel')">
               </td>
             </tr>
+            <tr>
             <th class="side-ipa">Open-mid</th>
-              <td>ɛ
+              <td onclick="select(this)" id="v40u">ɛ
                 <audio src="audio/Open-mid_front_unrounded_vowel.ogg" id="open-mid_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_front_unrounded_vowel')">
               </td>
-              <td>œ
+              <td onclick="select(this)" id="v40r">œ
                 <audio src="audio/Open-mid_front_rounded_vowel.ogg" id="open-mid_front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_front_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_front_rounded_vowel')">
               </td>
-              <td>ɜ
+              <td onclick="select(this)" id="v41u">ɜ
                 <audio src="audio/Open-mid_central_unrounded_vowel.ogg" id="open-mid_central_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_central_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_central_unrounded_vowel')">
               </td>
-              <td>ɞ
+              <td onclick="select(this)" id="v41r">ɞ
                 <audio src="audio/Open-mid_central_rounded_vowel.ogg" id="open-mid_central_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_central_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_central_rounded_vowel')">
               </td>
-              <td>ʌ
+              <td onclick="select(this)" id="v42u">ʌ
                 <audio src="audio/Open-mid_back_unrounded_vowel.ogg" id="open-mid_back_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_back_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_back_unrounded_vowel')">
               </td>
-              <td>ɔ
+              <td onclick="select(this)" id="v42r">ɔ
                 <audio src="audio/Open-mid_back_rounded_vowel.ogg" id="open-mid_back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open-mid_back_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open-mid_back_rounded_vowel')">
               </td>
             </tr>
+            <tr>
             <th class="side-ipa">Near-open</th>
-              <td>æ
+              <td onclick="select(this)" id="v50u">æ
                 <audio src="audio/Near-open_front_unrounded_vowel.ogg" id="near-open_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('near-open_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'near-open_front_unrounded_vowel')">
               </td>
               <td></td>
-              <td colspan="2">ɐ
-                <audio src="audio/Near-open_central_vowel.ogg" id="near-open_central_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('near-open_central_vowel')">
+              <td colspan="2" onclick="select(this)" id="v51u">ɐ
+                <audio src="audio/Near-open_central_unrounded_vowel.ogg" id="near-open_central_unrounded_vowel"></audio>
+                <img src="images/speaker.png" onclick="playAudio(event, 'near-open_central_unrounded_vowel')">
               </td>
               <td colspan="2"></td>
             </tr>
-            <th class="side-ipa bottom-row">Open</th>
-              <td class="bottom-row">a
+            <tr>
+            <th class="side-ipa bottom-row" style="border-bottom-left-radius: 7px;" rowspan="2">Open</th>
+              <td class="bottom-row" onclick="select(this)" id="v60u">a
                 <audio src="audio/Open_front_unrounded_vowel.ogg" id="open_front_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open_front_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open_front_unrounded_vowel')">
               </td>
-              <td class="bottom-row">ɶ
+              <td class="bottom-row" onclick="select(this)" id="v60r">ɶ
                 <audio src="audio/Open_front_rounded_vowel.ogg" id="open_front_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open_front_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open_front_rounded_vowel')">
               </td>
-              <td class="bottom-row">ä
+              <td class="bottom-row" onclick="select(this)" id="v61u">ä
                 <audio src="audio/Open_central_unrounded_vowel.ogg" id="open_central_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open_central_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open_central_unrounded_vowel')">
               </td>
               <td></td>
-              <td class="bottom-row">ɑ
+              <td class="bottom-row" onclick="select(this)" id="v62u">ɑ
                 <audio src="audio/Open_back_unrounded_vowel.ogg" id="open_back_unrounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open_back_unrounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open_back_unrounded_vowel')">
               </td>
-              <td class="bottom-row">ɒ
+              <td class="bottom-row" onclick="select(this)" id="v62r">ɒ
                 <audio src="audio/Open_back_rounded_vowel.ogg" id="open_back_rounded_vowel"></audio>
-                <img src="images/speaker.png" onclick="playAudio('open_back_rounded_vowel')">
+                <img src="images/speaker.png" onclick="playAudio(event, 'open_back_rounded_vowel')">
               </td>
             </tr>
+            <tr>
+              <td></td>
+            </tr>
           </table>
-          
-
-          <p class="disclaimer">All sounds have been sourced from Wikipedia, and the information for the tables has been referenced from Wikipedia.</p>
         </div>
         <div class="modal-footer">
-          <h3>Modal Footer</h3>
+          <span class="disclaimer">All sounds have been sourced from Wikipedia, and the information for the tables has been referenced from Wikipedia.</span>
         </div>
       </div>
     </div>
