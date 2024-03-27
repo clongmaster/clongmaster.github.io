@@ -43,12 +43,12 @@ function saveGenInfo() {
 }
 
 function select(cell) {
-  let values = cell.id.split('');
+  let values = cell.id.split("");
   let i = parseInt(values[1]);
   let j = parseInt(values[2]);
   let arrName;
 
-  if (values[3] == 'r') {
+  if (values[3] == "r") {
     arrName = "roundedVowels";
   } else {
     arrName = "unroundedVowels";
@@ -73,6 +73,32 @@ function loadData() {
   let genInfo = JSON.parse(localStorage.getItem("clongGenInfo"));
   let roundedVowels = JSON.parse(localStorage.getItem("roundedVowels"));
   let unroundedVowels = JSON.parse(localStorage.getItem("unroundedVowels"));
+  if (roundedVowels == null) {
+    roundedVowels = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+    ];
+    roundedVowels_serialized = JSON.stringify(roundedVowels);
+    localStorage.setItem("roundedVowels", roundedVowels_serialized);
+  }
+  if (unroundedVowels == null) {
+    (unroundedVowels = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+    ]),
+      (unroundedVowels_serialized = JSON.stringify(unroundedVowels));
+    localStorage.setItem("unroundedVowels", unroundedVowels_serialized);
+  }
 
   if (genInfo != null) {
     if (genInfo.name != "") {
