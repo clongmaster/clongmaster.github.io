@@ -46,19 +46,19 @@ function loadData() {
 
   if (genInfo != null) {
     if (genInfo.name != "") {
-      document.getElementById("name").innerHTML = genInfo.name;
+      document.getElementById("name").innerText = genInfo.name;
     } else {
-      document.getElementById("name").innerHTML = "Conlang name";
+      document.getElementById("name").innerText = "Conlang name";
     }
     if (genInfo.eng != "") {
-      document.getElementById("engName").innerHTML = genInfo.eng;
+      document.getElementById("engName").innerText = genInfo.eng;
     } else {
-      document.getElementById("engName").innerHTML = "Conlang name in English";
+      document.getElementById("engName").innerText = "Conlang name in English";
     }
     if (genInfo.desc != "") {
-      document.getElementById("desc").innerHTML = genInfo.desc;
+      document.getElementById("desc").innerText = genInfo.desc;
     } else {
-      document.getElementById("desc").innerHTML = "Description / Lore";
+      document.getElementById("desc").innerText = "Description / Lore";
     }
 
     document.getElementById("nameInput").value = genInfo.name;
