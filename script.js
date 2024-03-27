@@ -67,6 +67,10 @@ function loadData() {
   }
 }
 
+function playAudio(audio) {
+  document.getElementById(audio).play()
+}
+
 window.onload = function () {
   loadData();
 };
