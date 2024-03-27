@@ -130,6 +130,15 @@ function loadData() {
           count += 1;
           if (element != null) {
             element.style.visibility = "visible";
+            let rElement = document.getElementById(`vowel${i}${j}r`);
+            if (roundedVowels[i][j] == 0) {
+              element.colSpan = 2;
+              if (rElement != null) {
+                rElement.style.display = "none";
+              }
+            } else {
+              rElement.style.display = "table-cell";
+            }
             if (!cell.classList.contains("selected")) {
               cell.classList.add("selected");
             }
@@ -149,6 +158,15 @@ function loadData() {
           let cell = document.getElementById(`v${i}${j}r`);
           count += 1;
           if (element != null) {
+            let uElement = document.getElementById(`vowel${i}${j}u`);
+            if (unroundedVowels[i][j] == 0) {
+              element.colSpan = 2;
+              if (uElement != null) {
+                uElement.style.display = "none";
+              }
+            } else {
+              uElement.style.display = "table-cell";
+            }
             element.style.visibility = "visible";
             if (!cell.classList.contains("selected")) {
               cell.classList.add("selected");

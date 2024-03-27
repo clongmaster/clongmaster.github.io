@@ -235,7 +235,7 @@ td, th {
   cursor: default;
 }
 td {
-  padding: 5px;
+  padding: 5px 0 5px 5px;
 }
 .top-ipa th, .top-ipa td {
   background-color: var(--secondary-one);
