@@ -137,7 +137,10 @@ function loadData() {
                 rElement.style.display = "none";
               }
             } else {
-              rElement.style.display = "table-cell";
+              element.colSpan = 1;
+              if (rElement != null) {
+                rElement.style.display = "table-cell";
+              }
             }
             if (!cell.classList.contains("selected")) {
               cell.classList.add("selected");
@@ -165,7 +168,10 @@ function loadData() {
                 uElement.style.display = "none";
               }
             } else {
-              uElement.style.display = "table-cell";
+              element.colSpan = 1;
+              if (uElement != null) {
+                uElement.style.display = "table-cell";
+              }
             }
             element.style.visibility = "visible";
             if (!cell.classList.contains("selected")) {
