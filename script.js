@@ -141,6 +141,8 @@ function loadData() {
       }
       if (count > 0) {
         document.getElementById(`vowelRow${i + 1}`).style.display = "table-row";
+      } else {
+        document.getElementById(`vowelRow${i + 1}`).style.display = "none";
       }
     }
   }
