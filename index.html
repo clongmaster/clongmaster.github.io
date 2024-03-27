@@ -12,7 +12,7 @@
   <body>
     <div id="main">
       <h1 id="name">Conlang name</h1>
-      <h2 id="engName">Conlang name in English</h2>
+      <h2 id="engName" style="font-style: italic;">Conlang name in English</h2>
       <p id="desc">Description / Lore</p>
     </div>
     <div id="sidebar">
@@ -21,7 +21,8 @@
       <p onclick="openModal('editOrthography')">Edit orthography</p>
       <p onclick="openModal('editMorphology')">Edit morphology</p>
       <p onclick="openModal('editSyntax')">Edit syntax</p>
-      <p style="margin-top: auto">Export</p>
+      <p style="margin-top: auto">Settings</p>
+      <p>Export</p>
       <p>Import</p>
     </div>
 
@@ -48,7 +49,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <span class="close" onclick="closeModal('editPhonology')">&times;</span>
           <h2>Phonology</h2>
         </div>
         <div class="modal-body">
@@ -65,7 +66,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <span class="close" onclick="closeModal('editOrthography')">&times;</span>
           <h2>Orthography</h2>
         </div>
         <div class="modal-body">
@@ -82,7 +83,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <span class="close" onclick="closeModal('editMorphology')">&times;</span>
           <h2>Morphology</h2>
         </div>
         <div class="modal-body">
@@ -99,7 +100,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close" onclick="closeModal('editGenInfo')">&times;</span>
+          <span class="close" onclick="closeModal('editSyntax')">&times;</span>
           <h2>Syntax</h2>
         </div>
         <div class="modal-body">

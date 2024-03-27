@@ -31,8 +31,8 @@ function saveGenInfo() {
   let genInfo = {
     name: name,
     eng: eng,
-    desc: desc
-  }
+    desc: desc,
+  };
 
   let genInfo_serialized = JSON.stringify(genInfo);
   localStorage.setItem("clongGenInfo", genInfo_serialized);
@@ -43,16 +43,30 @@ function saveGenInfo() {
 
 function loadData() {
   let genInfo = JSON.parse(localStorage.getItem("clongGenInfo"));
-  
-  document.getElementById("name").innerHTML = genInfo.name;
-  document.getElementById("engName").innerHTML = genInfo.eng;
-  document.getElementById("desc").innerHTML = genInfo.desc;
 
-  document.getElementById("nameInput").value = genInfo.name;
-  document.getElementById("engNameInput").value = genInfo.eng;
-  document.getElementById("descInput").value = genInfo.desc;
+  if (genInfo != null) {
+    if (genInfo.name != "") {
+      document.getElementById("name").innerHTML = genInfo.name;
+    } else {
+      document.getElementById("name").innerHTML = "Conlang name";
+    }
+    if (genInfo.eng != "") {
+      document.getElementById("engName").innerHTML = genInfo.eng;
+    } else {
+      document.getElementById("engName").innerHTML = "Conlang name in English";
+    }
+    if (genInfo.desc != "") {
+      document.getElementById("desc").innerHTML = genInfo.desc;
+    } else {
+      document.getElementById("desc").innerHTML = "Description / Lore";
+    }
+
+    document.getElementById("nameInput").value = genInfo.name;
+    document.getElementById("engNameInput").value = genInfo.eng;
+    document.getElementById("descInput").value = genInfo.desc;
+  }
 }
 
-window.onload = function() {
+window.onload = function () {
   loadData();
-}
+};

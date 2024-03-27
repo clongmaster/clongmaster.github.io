@@ -1,3 +1,18 @@
+:root {
+  --trans-bg: #0006;
+  --shadow-one: #0003;
+  --shadow-two: #00000030;
+
+  --primary-one: #fff;
+  --primary-two: #000;
+
+  --secondary-one: #ececec;
+  --secondary-two: #fefefe;
+
+  --colour-one: #b84;
+  --colour-two: ;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +31,7 @@ body {
 }
 #sidebar {
   width: calc(20% - 1vw);
-  background-color: rgb(236, 236, 236);
+  background-color: var(--secondary-one);
   float: left;
   display: flex;
   flex-direction: column;
@@ -40,7 +55,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: var(--primary-two);
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
@@ -60,19 +75,19 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: var(--primary-two); /* Fallback color */
+  background-color: var(--trans-bg); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: var(--secondary-two);
   margin: auto;
   padding: 0;
   border-radius: 10px;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 var(--shadow-one), 0 6px 20px 0 var(--shadow-two);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -104,7 +119,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: var(--primary-one);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -112,15 +127,15 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--primary-two);
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
   padding: 12px 16px;
-  background-color: #b84;
-  color: white;
+  background-color: var(--colour-one);
+  color: var(--primary-one);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 30px;
@@ -148,8 +163,8 @@ body {
 
 .modal-footer {
   padding: 18px 16px;
-  background-color: #b84;
-  color: white;
+  background-color: var(--colour-one);
+  color: var(--primary-one);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -167,7 +182,7 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--primary-one);
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
